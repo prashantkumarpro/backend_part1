@@ -1,0 +1,83 @@
+// node vs express -> Node is the main thing but express ke code se we can write server's code and server kaise react karega wo bhi we wrtie
+// the help of express
+
+// What is express js -> Express js is a package. With the help of express we can create routing etc
+
+// Why express js -> http is difficult to use, express makes this easier
+
+// routing - The process of makeing routes is called routing
+// routes -> /profile, /home, /contact etc
+
+// Express fremwork for node.js
+// Use case of Express => routhing
+
+// routing =>
+// https://www.facebook.com/profile
+
+//base url ke bad jab bhi slace laga rahe ga to use route kahte
+route means different url like /profile, /like, /comment,
+
+// we want /profile par user ko profile dikhe and /contact par user ko contact dikhe
+
+// different different routes par different different pages dikha paye
+
+//types of route
+GET route
+POST route, PUT, PATCH, DELETE
+
+// GET AND POST
+
+// middleware
+// middleware is a function that runs before every routes and usame likha code pahle execute hota hai
+
+// req mein saara data hota hai aane waale user ki request ki taraf ka, jaise ki uski location, device info
+// and other things. res mein controls hota hai jinke basis pe hum server se response bhej pate hai,
+next is just a push so that our request moves to the next thing which should be executed
+
+Dynamic routes
+
+// dynamic route: aisa koi route jiska koi hissa baar baar same rahta hai and kuchh hissa baar baar
+// change hota hai iske liye app ek dynamic route banate ho
+
+// asia koi bhi route jiska koi hissa baar baar same rahta and kuchh hissa
+// change hota hai iske liye app ek dynamic route bana sakte ho
+
+route parameters
+to make any route dynamic you can use : at the place where you want to make it dynamic, and to access
+there value use req.params
+
+/author/books/issued/hars
+/author/books/issued/harsita
+/author/books/issued/himan
+
+Tamplate engins =>  ek markup style jo ki baad me html men  convert html mein ho jata hai
+pug, handlebars, ejs, 
+
+ejs is very very similar to html
+
+html ke pass superpowers nahi hai calculation karne kaise
+
+ejs is html with superpowers - you can do some calculation withn ejs
+
+ejs setup
+1) ejs install
+npm i ejs
+
+2) configure ejs
+app.set("view engine", "ejs")
+
+3) ek views folder banao
+
+4) usmein ejs files banao 
+
+5) send ki jagah render karo => render karte waqt make sure app views folder
+ke ander waali hi koi file ka name likhein, aur render function me .ejs mention 
+na kare
+
+// Static files -> Images, stylesheets, frontend js setup karna
+
+// static files setup karne ke liye
+// create a folder called public
+// create three folders inside it images, stylesheets, javascript
+// configure the express static in script.js
+// understand the path
